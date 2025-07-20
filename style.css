@@ -1,0 +1,70 @@
+abody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+h1 {
+    color: #2e8b57; /* Sea green */
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between label/input pairs */
+    align-items: flex-start; /* Align labels to the left */
+}
+
+label {
+    font-weight: bold;
+    color: #2f4f4f; /* Dark slate gray */
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #add8e6; /* Light blue border */
+    border-radius: 4px;
+    width: 250px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4682b4; /* Steel blue on focus */
+    box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #3cb371; /* Medium sea green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Space above button */
+}
+
+button:hover {
+    background-color: #2e8b57; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+#outputmessage {
+    margin-top: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #8b0000; /* Dark red for output */
+    text-align: center;
+}
